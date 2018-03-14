@@ -1,0 +1,26 @@
+[
+  {
+    "name": "kenny",
+    "email": "kenny.krosky@gmail.com",
+    "message": "",
+    "isInBox": true
+  },
+  {
+    "name": "Ramey",
+    "email": "ramey.krosky@gmail.com",
+    "message": "",
+    "isInBox": true
+  },
+  {
+    "name": "Kayden",
+    "email": "kayden.krosky@gmail.com",
+    "message": "",
+    "isInBox": false
+  },
+  {
+    "name": "Kota",
+    "email": "kota.krosky@gmail.com",
+    "message": "",
+    "isInBox": false
+  }
+]
