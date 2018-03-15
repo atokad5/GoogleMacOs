@@ -1,0 +1,24 @@
+<section class="emails is-component">
+  <div>
+    <h1 style='margin: 0;'>Unread</h1>
+  {{#each emails}}
+    {{#if isInBox}}
+     <div>
+        {{name}}
+     </div>
+    {{/if}}
+  {{/each}}
+  </div>
+  <hr>
+  
+  <div>
+    <h1 style='margin: 0;'>Inbox</h1>
+  {{#each emails}}
+    {{#unless isInBox}}
+     <div>
+        {{name}}
+     </div>
+    {{/unless}}
+  {{/each}}
+  </div>
+</section>

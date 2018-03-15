@@ -1,0 +1,45 @@
+.client-nav {
+  margin-left: 150px;
+  border-bottom: 2px solid $lightGrey;
+  
+  &--inner {
+
+    &:after {
+      content: '';
+      position: relative;
+      clear: both;
+      display: block;
+    }
+  }
+}
+
+
+.logo {
+  margin: 0;
+  width: 100px;
+  display: inline-block;
+  
+
+  img {
+    width: 100%;
+    padding: 1.5em 0em 0em 1.5em;
+  }
+
+}
+
+.menuTab {
+  float: right;
+  width: 2em;
+  padding: 1.4em 1em 1.4em 1.5em;
+  background: $lightGrey;
+}
+
+.menuIcon {
+  cursor: pointer;
+  width: 25px;
+  
+
+  g {
+    fill: #939394;
+  }
+}

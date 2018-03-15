@@ -1,0 +1,17 @@
+.view {
+  margin-left: 150px;
+  display: flex;
+  padding-top: 4em;
+
+  &:after {
+    content: '';
+    position: relative;
+    display: block;
+    clear: both;
+  }
+}
+
+
+.full-email-view {
+  width: 100%;
+}

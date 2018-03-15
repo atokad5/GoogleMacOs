@@ -1,1 +1,4 @@
-console.log('this is your app.js file')
+import sideBar from './sidebar.js';
+
+
+sideBar();

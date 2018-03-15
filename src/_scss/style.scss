@@ -1,4 +1,10 @@
-.component {
-  max-width: 800px;
-  line-height: 1.5;
-}
+@import "settings";
+@import "mixins";
+@import "defaults";
+@import "components/sidebar";
+@import "components/emails";
+@import "components/client-nav";
+@import "components/views";
+
+// widgets (hangout bubbles, interactions)
+@import "widgets/hangouts";
