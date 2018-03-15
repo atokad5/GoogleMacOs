@@ -1,8 +1,8 @@
 .hangout-bubbles {
-  height: 70px;
+  height: 60px;
   bottom: 40px;
   position: absolute;
-  width: 70px;
+  width: 60px;
   left: 50%;
   z-index: 5;
   transform: translateX(-50%);
@@ -58,6 +58,7 @@
 .is-notify {
   background: #262F3D;
   z-index: 9;
+  border: 3px solid transparent ;
 
 }
 

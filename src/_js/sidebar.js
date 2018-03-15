@@ -3,19 +3,31 @@ export default function() {
 
     const notifyBubble = $('.is-notify'),
           sideBarItems = $('.sidebar-menu li'),
-          body = $('body')
+          body = $('body'),
+          activeBubble = $('.has-notification-alert'),
+          noteBubble = $('.notify-bubble'),
+          hangPerson = $('.is-hangout-contact')
 
     const initHangout = () => body.toggleClass('showing-hangout')
     notifyBubble.click(initHangout)
 
-    const menuInit = function() {
+    const hideNotify = () => noteBubble.hide();
+    activeBubble.click(hideNotify)
+  
+    function menuInit() {
       let $t = $(this);
       sideBarItems.removeClass('isActive');
       $t.addClass('isActive')
 
     }
-
     sideBarItems.click(menuInit)
 
+    function getData() {
+      let $t = $(this);
+      console.log($t.attr('data-name'))
+    }
+
+    hangPerson.click(getData);
+    
   })(jQuery);
 }
