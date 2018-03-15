@@ -7,7 +7,7 @@
   left: 50%;
   z-index: 5;
   transform: translateX(-50%);
-  
+}
 
 .is-hangout-contact {
   transition: all 350ms $ease-in-quart;
@@ -26,6 +26,10 @@
     border: 3px solid $blue;
     background: #D3AFAF;
   }
+  &:nth-of-type(1) {
+    background: $green;
+    border: 3px solid $green;
+  }
 
 
   
@@ -38,7 +42,6 @@
   background: orange;
   position: absolute;
   cursor: pointer;
-  visibility: hidden;
 
 
   img {
@@ -54,7 +57,7 @@
 .is-notify {
   background: #262F3D;
   z-index: 9;
-  visibility: visible;
+
 }
 
 .notify-bubble {
@@ -85,26 +88,8 @@
   display: inline-block;
 }
 
-.hangout-cover {
-  &.isActive {
-    background: $primaryColor;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0; left: 0;
-  }
-}
 
 .showing-hangout {
-
-  .hangout-cover {
-    background: $primaryColor;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0; left: 0;
-    
-  }
 
   @for $i from 1 through 4 {
 
@@ -112,7 +97,7 @@
       visibility: visible;
       transform: translateY(-95px * $i);
       opacity: 1;
-      transition: all 300ms $ease-out-back;
+      transition: all 400ms $ease-out-back;
 
       &:hover {
         transform:translateY(-95px * $i)  scale(1.1);
@@ -120,15 +105,14 @@
     }
   }
 
-    .notify-bubble {
-      transform: translateY(20px);
-      opacity: 0;
-    }
+  .notify-bubble {
+    transform: translateY(20px);
+    opacity: 0;
+  }
 
-    .messageIcon {
-      transform: translate(-50%, -50%) scale(0.5);
-      opacity: 0;
-      transition: all 200ms $ease-out-back;
-    }
+  .messageIcon {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    transition: all 200ms $ease-out-back;
   }
 }

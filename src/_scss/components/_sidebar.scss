@@ -4,13 +4,24 @@
   position: fixed;
   height: 100vh;
   overflow: auto;
+}
 
+.showing-hangout {
+  li {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  .avatarImg {
+    opacity: 0;
+    transform: scale(0.8);
+  }
 }
 
 .avatarImg {
   margin: 3em auto 1.5em auto;
   height: 80px;
   width: 80px;
+  transition: all 200ms ease;
   position: relative;
   border-radius: 100%;
   overflow: hidden;
@@ -39,6 +50,14 @@
     position: relative;
     padding: 0.9em 0em 0.9em 1.5em;
     cursor: pointer;
+    transition: transform 340ms, opacity 340ms ease;
+
+    @for $i from 1 through 5 {
+
+      &:nth-of-type(#{$i}) {
+        transition-delay: 40ms * $i;
+      }
+    }
 
     a {
       color: white;
@@ -49,7 +68,6 @@
       transition: all 150ms ease;
     }
     
-
 
     &.isActive {
       font-weight: bolder;
@@ -63,6 +81,13 @@
       &:before {
         transform: translateX(0px);
         transition: all 150ms ease;
+      }
+
+      &:hover {
+        a {
+          opacity: 1;
+          transform: translateX(4px);
+        }
       }
 
     }
