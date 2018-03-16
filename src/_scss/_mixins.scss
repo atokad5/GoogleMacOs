@@ -9,3 +9,10 @@
     transform: translateX(-3px);
   }
 }
+
+@mixin clearfix() {
+  content: '';
+  position: relative;
+  display: block;
+  clear: both;
+}

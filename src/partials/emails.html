@@ -1,24 +1,56 @@
 <section class="emails is-component">
-  <div>
-    <h1 style='margin: 0;'>Unread</h1>
-  {{#each emails}}
-    {{#if isInBox}}
-     <div>
-        {{name}}
-     </div>
-    {{/if}}
-  {{/each}}
+  <div class="emails--inner">
+    <div class="is-email--container unread">
+      <h1 class="email-type">Unread</h1>
+      {{#each emails}}
+      {{#if isInBox}}
+       <div class="email-card">
+        <div class="is-email--section has-img">
+          <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+          </div>
+        </div>
+        <div class="is-email--section has-content">
+          <div class="sender-inner--content">
+            <p class="sender-name">{{name}}</p>
+            <p class="email-sum">{{message}}</p>
+          </div>
+        </div>
+        <div class="email-action">
+          <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
+          <span><img src="assets/images/trashcan.png" alt="" class="action-icon"></span>
+          <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
+        </div>
+       </div>
+      {{/if}}
+    {{/each}}
   </div>
-  <hr>
-  
-  <div>
-    <h1 style='margin: 0;'>Inbox</h1>
-  {{#each emails}}
-    {{#unless isInBox}}
-     <div>
-        {{name}}
-     </div>
-    {{/unless}}
-  {{/each}}
+   
+    
+    <div>
+      <h1 class="email-type">Inbox</h1>
+      <div class="inbox">
+        {{#each emails}}
+          {{#unless isInBox}}
+          <div class="email-card">
+            <div class="is-email--section has-img">
+              <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+              </div>
+            </div>
+            <div class="is-email--section has-content">
+              <div class="sender-inner--content">
+                <p class="sender-name">{{name}}</p>
+                <p class="email-sum">{{message}}</p>
+              </div>
+            </div>
+            <div class="email-action">
+              <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
+              <span><img src="assets/images/trashcan.png" alt="" class="action-icon"></span>
+              <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
+            </div>
+          </div>
+          {{/unless}}
+        {{/each}}
+      </div>
+    </div>
   </div>
 </section>

@@ -39,6 +39,9 @@
         </div>
         <div class="is-bubble is-notify">
           <svg class="messageIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <div class="closeCross">
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </div>
           <div class="notify-bubble main-notify"><span class="alert-num">1</span></div>
         </div>
       </div>
@@ -78,25 +81,153 @@
   
   <section class="view">
     <section class="emails is-component">
-      <div>
-        <h1 style='margin: 0;'>Unread</h1>
-         <div>
-            kenny
-         </div>
-         <div>
-            Ramey
-         </div>
+      <div class="emails--inner">
+        <div class="is-email--container unread">
+          <h1 class="email-type">Unread</h1>
+           <div class="email-card">
+            <div class="is-email--section has-img">
+              <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+              </div>
+            </div>
+            <div class="is-email--section has-content">
+              <div class="sender-inner--content">
+                <p class="sender-name">Brad Smith</p>
+                <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore sit autem alias.....</p>
+              </div>
+            </div>
+            <div class="email-action">
+              <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
+              <span><img src="assets/images/trashcan.png" alt="" class="action-icon"></span>
+              <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
+            </div>
+           </div>
+           <div class="email-card">
+            <div class="is-email--section has-img">
+              <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+              </div>
+            </div>
+            <div class="is-email--section has-content">
+              <div class="sender-inner--content">
+                <p class="sender-name">Adam Lee</p>
+                <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi.....</p>
+              </div>
+            </div>
+            <div class="email-action">
+              <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
+              <span><img src="assets/images/trashcan.png" alt="" class="action-icon"></span>
+              <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
+            </div>
+           </div>
+           <div class="email-card">
+            <div class="is-email--section has-img">
+              <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+              </div>
+            </div>
+            <div class="is-email--section has-content">
+              <div class="sender-inner--content">
+                <p class="sender-name">Ramey Watkins</p>
+                <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....</p>
+              </div>
+            </div>
+            <div class="email-action">
+              <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
+              <span><img src="assets/images/trashcan.png" alt="" class="action-icon"></span>
+              <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
+            </div>
+           </div>
       </div>
-      <hr>
-      
-      <div>
-        <h1 style='margin: 0;'>Inbox</h1>
-         <div>
-            Kayden
-         </div>
-         <div>
-            Kota
-         </div>
+       
+        
+        <div>
+          <h1 class="email-type">Inbox</h1>
+          <div class="inbox">
+              <div class="email-card">
+                <div class="is-email--section has-img">
+                  <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+                  </div>
+                </div>
+                <div class="is-email--section has-content">
+                  <div class="sender-inner--content">
+                    <p class="sender-name">Kayden</p>
+                    <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....</p>
+                  </div>
+                </div>
+                <div class="email-action">
+                  <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
+                  <span><img src="assets/images/trashcan.png" alt="" class="action-icon"></span>
+                  <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
+                </div>
+              </div>
+              <div class="email-card">
+                <div class="is-email--section has-img">
+                  <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+                  </div>
+                </div>
+                <div class="is-email--section has-content">
+                  <div class="sender-inner--content">
+                    <p class="sender-name">Kota</p>
+                    <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....</p>
+                  </div>
+                </div>
+                <div class="email-action">
+                  <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
+                  <span><img src="assets/images/trashcan.png" alt="" class="action-icon"></span>
+                  <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
+                </div>
+              </div>
+              <div class="email-card">
+                <div class="is-email--section has-img">
+                  <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+                  </div>
+                </div>
+                <div class="is-email--section has-content">
+                  <div class="sender-inner--content">
+                    <p class="sender-name">Kota</p>
+                    <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....</p>
+                  </div>
+                </div>
+                <div class="email-action">
+                  <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
+                  <span><img src="assets/images/trashcan.png" alt="" class="action-icon"></span>
+                  <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
+                </div>
+              </div>
+              <div class="email-card">
+                <div class="is-email--section has-img">
+                  <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+                  </div>
+                </div>
+                <div class="is-email--section has-content">
+                  <div class="sender-inner--content">
+                    <p class="sender-name">Kota</p>
+                    <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....</p>
+                  </div>
+                </div>
+                <div class="email-action">
+                  <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
+                  <span><img src="assets/images/trashcan.png" alt="" class="action-icon"></span>
+                  <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
+                </div>
+              </div>
+              <div class="email-card">
+                <div class="is-email--section has-img">
+                  <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+                  </div>
+                </div>
+                <div class="is-email--section has-content">
+                  <div class="sender-inner--content">
+                    <p class="sender-name">Kota</p>
+                    <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....</p>
+                  </div>
+                </div>
+                <div class="email-action">
+                  <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
+                  <span><img src="assets/images/trashcan.png" alt="" class="action-icon"></span>
+                  <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
+                </div>
+              </div>
+          </div>
+        </div>
       </div>
     </section>  <section class="full-email-view is-component" style="background: #e6e6e6;">
       Full Email View
