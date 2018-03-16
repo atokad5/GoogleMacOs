@@ -117,3 +117,19 @@
 .email-type {
   padding-bottom: 0.5em;
 }
+
+.caughtUp {
+  display: none;
+}
+
+.refresh {
+  width: 25px;
+  cursor: pointer;
+
+  svg {
+    width: 100%;
+    transition: all 600ms ease;
+    stroke: $lightGrey;
+
+  }
+}
