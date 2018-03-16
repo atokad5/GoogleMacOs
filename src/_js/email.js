@@ -8,22 +8,26 @@ export default function() {
         unReadCount = unRead.length;
       
 
-    function pushAway() {
+    function pushAway(e) {
       unReadCount = unReadCount - 1;
       inBoxCount.html(unReadCount)
       let $t = $(this);
       let cloner = $t.clone();
       inBox.prepend(cloner)
       $t.hide();
-      
       if(unReadCount <= 0) {
         caught.fadeIn()
       }
+      e.stopPropagation();
+      console.log('push away')
+      
     }
 
-    function removeEmail() {
+    function removeEmail(e) {      
       let $t = $(this);
       $t.parents('.email-card').hide();
+      console.log($t)
+      e.stopPropagation();
     }
 
 
@@ -34,7 +38,9 @@ export default function() {
       })
     })
 
-    unRead.click(pushAway)
-    trash.click(removeEmail)
+    // unRead.click(pushAway)
+    $(document).on('click', '.unread .email-card', pushAway)
+    $(document).on('click', '.trash', removeEmail)
+    
   })(jQuery);
 }
