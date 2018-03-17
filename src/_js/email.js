@@ -39,9 +39,8 @@ export default function() {
 
 
     $('.refresh').click(function() {
-      $(this).find('svg').css({
-        transform: 'rotate(' + 720 + 'deg)'
-      })
+      $('.refresh').removeClass('is-active');
+      $(this).addClass('is-active');
     })
 
     // unRead.click(pushAway)

@@ -1,50 +1,51 @@
 [
   {
     "name": "Brad Smith",
-    "email": "kenny.krosky@gmail.com",
+    "email": "bradsmith@gmail.com",
     "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore sit autem alias.....",
+    "image": "assets/images/bradsmith.jpg",
     "isInBox": true
   },
   {
     "name": "Adam Lee",
-    "email": "ramey.krosky@gmail.com",
+    "email": "adam.kee@gmail.com",
     "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi.....",
+    "image": "assets/images/adam.jpg",
     "isInBox": true
   },
   {
-    "name": "Ramey Watkins",
+    "name": "Ramey Krosky",
     "email": "ramey.krosky@gmail.com",
     "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....",
+    "image": "assets/images/ramey.jpg",
     "isInBox": true
   },
   {
-    "name": "Kayden",
+    "name": "Mandy Jenson",
     "email": "kayden.krosky@gmail.com",
     "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....",
+    "image": "assets/images/ramey.jpg",
     "isInBox": false
   },
   {
-    "name": "Kota",
+    "name": "Alex James",
     "email": "kota.krosky@gmail.com",
     "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....",
+    "image": "assets/images/ramey.jpg",
     "isInBox": false
   },
   {
-    "name": "Kota",
+    "name": "Kyle Jordan",
     "email": "kota.krosky@gmail.com",
     "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....",
+    "image": "assets/images/ramey.jpg",
     "isInBox": false
   },
   {
-    "name": "Kota",
+    "name": "Doug Jay",
     "email": "kota.krosky@gmail.com",
     "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....",
-    "isInBox": false
-  },
-  {
-    "name": "Kota",
-    "email": "kota.krosky@gmail.com",
-    "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....",
+    "image": "assets/images/dougjay.jpg",
     "isInBox": false
   }
 ]

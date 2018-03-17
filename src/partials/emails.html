@@ -1,5 +1,15 @@
 <section class="emails is-component">
   <div class="emails--inner">
+   <button class="compose">
+     compose
+   </button>
+
+   <div class="search-bar">
+     <form action="" class="search-form">
+       <input type="text" name="" placeholder="Search Emaill">
+       <input type="submit" value="Search">
+     </form>
+   </div>
     <div class="refresh">
         <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rotate-cw"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
     </div>
@@ -10,7 +20,7 @@
       {{#if isInBox}}
        <div class="email-card">
         <div class="is-email--section has-img">
-          <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+          <div class="sender-img" style="background-image: url({{image}});">
           </div>
         </div>
         <div class="is-email--section has-content">
@@ -37,7 +47,7 @@
           {{#unless isInBox}}
           <div class="email-card">
             <div class="is-email--section has-img">
-              <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+              <div class="sender-img" style="background-image: url({{image}});">
               </div>
             </div>
             <div class="is-email--section has-content">

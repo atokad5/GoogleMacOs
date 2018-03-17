@@ -28,7 +28,12 @@
   
       <div class="hangout-bubbles">
         <!-- pencil to create new hangout chat -->
-        <div class="is-bubble is-hangout-contact" data-name="Create Message" data-email="" data-image="" data-message="">dwa</div>
+        <div class="is-bubble is-hangout-contact" data-name="Create Message" data-email="" data-image="" data-message=""><svg class="pencil" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 32 40" enable-background="new 0 0 32 32" xml:space="preserve"><path d="M25.517,3.254l-3.385-2.127c-0.854-0.536-1.979-0.278-2.517,0.575l-1.334,2.123l6.474,4.066L26.09,5.77  C26.626,4.915,26.371,3.789,25.517,3.254z M6.763,22.168l6.474,4.064L23.788,9.436L17.31,5.368L6.763,22.168z M5.772,27.334  l-0.143,3.818l3.379-1.787l3.14-1.658l-6.246-3.926L5.772,27.334z"/><text x="0" y="47" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Dmitry Baranovskiy</text><text x="0" y="52" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+          <div class="create-msg">
+            <span class="alert-num">
+                <svg class="add-chat" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </span></div>
+        </div>
   
         <!-- The Hangout Users -->
           <div class="is-bubble is-hangout-contact " data-name="Ramey Krosky" data-email="ramey.krosky@gmail.com" data-image="assets/images/ramey.jpg" data-message="Babe! Please grab some eggs on the way home from Zurb today! Thanks!">
@@ -103,7 +108,7 @@
       </div>
   
       <div class="msg-chat">
-        <form action="">
+        <form action="" class="Form">
           <textarea class="txtArea" name="" id="">Here is a dummy sentence of awesomeness. This is an idea of the Hangouts feature..</textarea>
           <input type="submit" value="Send">
         </form>
@@ -116,6 +121,16 @@
   </section><section class="view">
     <section class="emails is-component">
       <div class="emails--inner">
+       <button class="compose">
+         compose
+       </button>
+    
+       <div class="search-bar">
+         <form action="" class="search-form">
+           <input type="text" name="" placeholder="Search Emaill">
+           <input type="submit" value="Search">
+         </form>
+       </div>
         <div class="refresh">
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rotate-cw"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
         </div>
@@ -141,7 +156,7 @@
            </div>
            <div class="email-card">
             <div class="is-email--section has-img">
-              <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+              <div class="sender-img" style="background-image: url(assets/images/adam.jpg);">
               </div>
             </div>
             <div class="is-email--section has-content">
@@ -158,12 +173,12 @@
            </div>
            <div class="email-card">
             <div class="is-email--section has-img">
-              <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+              <div class="sender-img" style="background-image: url(assets/images/ramey.jpg);">
               </div>
             </div>
             <div class="is-email--section has-content">
               <div class="sender-inner--content">
-                <p class="sender-name">Ramey Watkins</p>
+                <p class="sender-name">Ramey Krosky</p>
                 <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....</p>
               </div>
             </div>
@@ -181,12 +196,12 @@
           <div class="inbox">
               <div class="email-card">
                 <div class="is-email--section has-img">
-                  <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+                  <div class="sender-img" style="background-image: url(assets/images/ramey.jpg);">
                   </div>
                 </div>
                 <div class="is-email--section has-content">
                   <div class="sender-inner--content">
-                    <p class="sender-name">Kayden</p>
+                    <p class="sender-name">Mandy Jenson</p>
                     <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....</p>
                   </div>
                 </div>
@@ -198,12 +213,12 @@
               </div>
               <div class="email-card">
                 <div class="is-email--section has-img">
-                  <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+                  <div class="sender-img" style="background-image: url(assets/images/ramey.jpg);">
                   </div>
                 </div>
                 <div class="is-email--section has-content">
                   <div class="sender-inner--content">
-                    <p class="sender-name">Kota</p>
+                    <p class="sender-name">Alex James</p>
                     <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....</p>
                   </div>
                 </div>
@@ -215,12 +230,12 @@
               </div>
               <div class="email-card">
                 <div class="is-email--section has-img">
-                  <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+                  <div class="sender-img" style="background-image: url(assets/images/ramey.jpg);">
                   </div>
                 </div>
                 <div class="is-email--section has-content">
                   <div class="sender-inner--content">
-                    <p class="sender-name">Kota</p>
+                    <p class="sender-name">Kyle Jordan</p>
                     <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....</p>
                   </div>
                 </div>
@@ -232,29 +247,12 @@
               </div>
               <div class="email-card">
                 <div class="is-email--section has-img">
-                  <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
+                  <div class="sender-img" style="background-image: url(assets/images/dougjay.jpg);">
                   </div>
                 </div>
                 <div class="is-email--section has-content">
                   <div class="sender-inner--content">
-                    <p class="sender-name">Kota</p>
-                    <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....</p>
-                  </div>
-                </div>
-                <div class="email-action">
-                  <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
-                  <span><img src="assets/images/trashcan.png" alt="" class="action-icon trash"></span>
-                  <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
-                </div>
-              </div>
-              <div class="email-card">
-                <div class="is-email--section has-img">
-                  <div class="sender-img" style="background-image: url(assets/images/bradsmith.jpg);">
-                  </div>
-                </div>
-                <div class="is-email--section has-content">
-                  <div class="sender-inner--content">
-                    <p class="sender-name">Kota</p>
+                    <p class="sender-name">Doug Jay</p>
                     <p class="email-sum">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque sequi, tempore.....</p>
                   </div>
                 </div>
