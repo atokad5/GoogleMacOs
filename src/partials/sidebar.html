@@ -15,15 +15,21 @@
     </div>
 
     <div class="hangout-bubbles">
-      <div class="is-bubble is-hangout-contact"></div>
-      <div class="is-bubble is-hangout-contact"></div>
-      <div class="is-bubble is-hangout-contact" data-name="erik">
-        <img src="assets/images/dougjay.jpg" alt="">
-      </div>
-      <div class="is-bubble is-hangout-contact has-notification-alert" data-name="brad smith">
-        <img src="assets/images/bradsmith.jpg" alt="">
-        <div class="notify-bubble"><span class="alert-num">1</span></div>
-      </div>
+      <!-- pencil to create new hangout chat -->
+      <div class="is-bubble is-hangout-contact" data-name="Create Message" data-email="" data-image="{{image}}" data-message="{{message}}">dwa</div>
+
+      <!-- The Hangout Users -->
+      {{#each chats}}
+        <div class="is-bubble is-hangout-contact {{#if hasNotiication}}has-notification-alert{{/if}}" data-name="{{name}}" data-email="{{email}}" data-image="{{image}}" data-message="{{message}}">
+          <img src="{{image}}" alt="">
+          {{#if hasNotiication}}
+          <div class="notify-bubble"><span class="alert-num">1</span></div>
+          {{/if}}
+        </div>
+      {{/each}}
+      
+
+        <!-- Notifcation bubble -->
       <div class="is-bubble is-notify">
         <svg class="messageIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
         <div class="closeCross">

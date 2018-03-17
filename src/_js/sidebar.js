@@ -22,12 +22,6 @@ export default function() {
     }
     sideBarItems.click(menuInit)
 
-    function getData() {
-      let $t = $(this);
-      console.log($t.attr('data-name'))
-    }
-
-    hangPerson.click(getData);
     
   })(jQuery);
 }

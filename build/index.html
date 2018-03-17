@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Static Site Build</title>
+  <title>Gmail Web View</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -28,15 +27,23 @@
       </div>
   
       <div class="hangout-bubbles">
-        <div class="is-bubble is-hangout-contact"></div>
-        <div class="is-bubble is-hangout-contact"></div>
-        <div class="is-bubble is-hangout-contact" data-name="erik">
-          <img src="assets/images/dougjay.jpg" alt="">
-        </div>
-        <div class="is-bubble is-hangout-contact has-notification-alert" data-name="brad smith">
-          <img src="assets/images/bradsmith.jpg" alt="">
-          <div class="notify-bubble"><span class="alert-num">1</span></div>
-        </div>
+        <!-- pencil to create new hangout chat -->
+        <div class="is-bubble is-hangout-contact" data-name="Create Message" data-email="" data-image="" data-message="">dwa</div>
+  
+        <!-- The Hangout Users -->
+          <div class="is-bubble is-hangout-contact " data-name="Ramey Krosky" data-email="ramey.krosky@gmail.com" data-image="assets/images/ramey.jpg" data-message="Babe! Please grab some eggs on the way home from Zurb today! Thanks!">
+            <img src="assets/images/ramey.jpg" alt="">
+          </div>
+          <div class="is-bubble is-hangout-contact " data-name="Doug Jay" data-email="dougiefresh@gmail.com" data-image="assets/images/dougjay.jpg" data-message="Kenny, what is the deal with you and coffee? Just relax man! You&#x27;re gonna miss out on some good sleeping patterns.">
+            <img src="assets/images/dougjay.jpg" alt="">
+          </div>
+          <div class="is-bubble is-hangout-contact has-notification-alert" data-name="Brad Smith" data-email="mrsmithbrad@gmail.com" data-image="assets/images/bradsmith.jpg" data-message="Ayo, How did that Google challenge go with Zurb?">
+            <img src="assets/images/bradsmith.jpg" alt="">
+            <div class="notify-bubble"><span class="alert-num">1</span></div>
+          </div>
+        
+  
+          <!-- Notifcation bubble -->
         <div class="is-bubble is-notify">
           <svg class="messageIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
           <div class="closeCross">
@@ -79,7 +86,34 @@
     </div>
   </div>
   
-  <section class="view">
+  <section class="chats">
+    <div class="inner">
+      <div class="sender-chat">
+        <div class="sender_avatar hasAv chatImg">
+        </div>
+        <div class="sender_name hasCo">
+            <p class="sender-name chatName">Name</p>
+            <p class="sender-email chatEmail">Email</p>
+        </div>
+      </div>
+      <div class="chat-view"> 
+        <div class="fakeMsg">
+          <p><span class="getName chatName">Name: </span><span class="chatMsg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus rerum, dolorum a nisi temporibus minima id commodi alias non quaerat! Fugit, neque unde. Officia vel dignissimos libero blanditiis commodi.</span></p>
+        </div>
+      </div>
+  
+      <div class="msg-chat">
+        <form action="">
+          <textarea class="txtArea" name="" id="">Here is a dummy sentence of awesomeness. This is an idea of the Hangouts feature..</textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+  
+    </div>
+    <div class="closeChat">
+      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </div>
+  </section><section class="view">
     <section class="emails is-component">
       <div class="emails--inner">
         <div class="refresh">

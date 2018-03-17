@@ -1,0 +1,109 @@
+.chats {
+  height: 600px;  
+  left: 150px;
+  width: 350px;
+  background: #262f3d;
+  z-index: 5;
+  position: fixed;
+  bottom: 0;
+  transform: translateY(600px);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+  &.is-active {
+    box-shadow: 0px 0px 10px rgba(black, .8);
+    transform: translateY(0px);
+    transition: all 200ms ease;
+  }
+}
+
+.sender-chat {
+  display: flex;
+}
+.chats .inner {
+  padding: 1.5em 1.5em 0em 1.5em ;
+}
+.hasAv {
+  width: 120px;
+  height: 100px;
+  background: grey;
+}
+.sender_name {
+  padding: 0em 1em 0em 1em;
+  color: white;
+
+  p {
+    margin: 0;
+  }
+  .sender-email {
+    font-style: italic;
+    color: #696969;
+  }
+}
+
+.chat-view {
+  width: 100%;
+  height: 330px;
+  background: $primaryColor;
+  margin-top: 1em;
+  overflow: scroll;
+  border-radius: 10px;
+  
+  p {
+    padding: 0em 1em;
+    font-size: 13px;
+  }
+}
+.fakeMsg {
+  background: white;
+  width: 90%;
+  margin: 0.6em auto;
+  padding: 0.4em 0.3em;
+  border-radius: 10px;
+}
+.msg-chat {
+  padding-top: 0.5em;
+}
+.getName {
+  color: #696969;
+  font-style: italic;
+}
+.chatImg {
+  background-size: cover;
+  background-position: center;
+}
+.txtArea {
+  height: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  width: calc(100% - 10px);
+  margin: 0;
+  padding: 0;
+  border: 1px solid $lightGrey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.msg-chat input[type="submit"] {
+  border: 2px solid $blue;
+  padding: 1em 3em;
+  color: white;
+  font-weight: bolder;
+  float: right;
+  margin-top: 10px;
+  background: transparent;
+  border-radius: 0px;
+  -webkit-appearance: none;
+}
+
+.closeChat {
+  position: absolute;
+  right: 0.6em;
+  top: 0.5em;
+  cursor: pointer;
+  width: 25px;
+  svg {
+    stroke: #f2f2f2;
+  }
+}
