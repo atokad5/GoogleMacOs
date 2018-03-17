@@ -6,7 +6,10 @@ export default function() {
         trash = $('.trash'),
         initCountUpdate = $('.unread .trash'),
         inBoxCount = $('.numCount'),
-        unReadCount = unRead.length;
+        unReadCount = unRead.length,
+        checkerInbox = $('#checker'),
+        checkerInboxJr = $('#checkerInbox'),
+        inBoxer = $('.inbox .email-card')
       
 
     function pushAway(e) {
@@ -43,10 +46,58 @@ export default function() {
       $(this).addClass('is-active');
     })
 
+    function unReadEmails() {
+      if(checkerInbox.is(":checked")) {
+        unRead.each(function(index) {
+          let $t = $(this);
+          setTimeout(function() {
+            $t.css({
+              opacity: 0.4
+            })
+          }, 100 * index)
+        })
+            
+      } else {
+        unRead.each(function(index) {
+          let $t = $(this);
+          setTimeout(function() {
+            $t.css({
+              opacity: 1
+            })
+          }, 100 * index)
+        })
+      }
+    }
+
+    function unReadEmailsJr() {
+      if(checkerInboxJr.is(":checked")) {
+        inBoxer.each(function(index) {
+          let $t = $(this);
+          setTimeout(function() {
+            $t.css({
+              opacity: 0.4
+            })
+          }, 100 * index)
+        })
+            
+      } else {
+        inBoxer.each(function(index) {
+          let $t = $(this);
+          setTimeout(function() {
+            $t.css({
+              opacity: 1
+            })
+          }, 100 * index)
+        })
+      }
+    }
+
     // unRead.click(pushAway)
     initCountUpdate.click(updateCounter)
     $(document).on('click', '.unread .email-card', pushAway)
     $(document).on('click', '.trash', removeEmail)
+    checkerInbox.click(unReadEmails)
+    checkerInboxJr.click(unReadEmailsJr)
 
 
   })(jQuery);

@@ -135,7 +135,15 @@
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rotate-cw"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
         </div>
         <div class="is-email--container unread">
-          <h1 class="email-type">Unread</h1>
+          <h1 class="email-type">Unread 
+              <div class="check">
+                <input  type="checkbox" name="" id="checker">
+                <label class="checkLabel" for="checker">
+                    <svg class="checkMark" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </label>
+              </div>
+          </h1>
+          
           <p class="caughtUp">You are all caught up!</p>
            <div class="email-card">
             <div class="is-email--section has-img">
@@ -150,7 +158,7 @@
             </div>
             <div class="email-action">
               <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
-              <span><img src="assets/images/trashcan.png" alt="" class="action-icon trash"></span>
+              <span class="trash"><img src="assets/images/trashcan.png" alt=""class="action-icon"></span>
               <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
             </div>
            </div>
@@ -167,7 +175,7 @@
             </div>
             <div class="email-action">
               <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
-              <span><img src="assets/images/trashcan.png" alt="" class="action-icon trash"></span>
+              <span class="trash"><img src="assets/images/trashcan.png" alt=""class="action-icon"></span>
               <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
             </div>
            </div>
@@ -184,7 +192,7 @@
             </div>
             <div class="email-action">
               <span><img src="assets/images/flag.png" alt="" class="action-icon"></span>
-              <span><img src="assets/images/trashcan.png" alt="" class="action-icon trash"></span>
+              <span class="trash"><img src="assets/images/trashcan.png" alt=""class="action-icon"></span>
               <span><img src="assets/images/reply.png" alt="" class="action-icon"></span>
             </div>
            </div>
@@ -192,11 +200,18 @@
        
         
         <div>
-          <h1 class="email-type">Inbox</h1>
+          <h1 class="email-type">Inbox
+          <div class="check">
+              <input  type="checkbox" name="" id="checkerInbox">
+              <label class="checkLabelInbox" for="checkerInbox">
+                  <svg class="checkMarkInbox" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </label>
+            </div>
+          </h1>
           <div class="inbox">
               <div class="email-card">
                 <div class="is-email--section has-img">
-                  <div class="sender-img" style="background-image: url(assets/images/ramey.jpg);">
+                  <div class="sender-img" style="background-image: url(assets/images/mandy.jpg);">
                   </div>
                 </div>
                 <div class="is-email--section has-content">
@@ -213,7 +228,7 @@
               </div>
               <div class="email-card">
                 <div class="is-email--section has-img">
-                  <div class="sender-img" style="background-image: url(assets/images/ramey.jpg);">
+                  <div class="sender-img" style="background-image: url(assets/images/alex.jpg);">
                   </div>
                 </div>
                 <div class="is-email--section has-content">
@@ -230,7 +245,7 @@
               </div>
               <div class="email-card">
                 <div class="is-email--section has-img">
-                  <div class="sender-img" style="background-image: url(assets/images/ramey.jpg);">
+                  <div class="sender-img" style="background-image: url(assets/images/kyle.jpg);">
                   </div>
                 </div>
                 <div class="is-email--section has-content">
@@ -265,8 +280,62 @@
           </div>
         </div>
       </div>
-    </section>  <section class="full-email-view is-component" style="background: #e6e6e6;">
-      Full Email View
+    </section>  <section class="full-email-view is-component">
+      <div class="email-view--inner">
+        <div class="from">
+          <div class="fromImg isFrom-component" style="background-image: url(assets/images/bradsmith.jpg);">   
+          </div>
+          <div class="fromSub isFrom-component">
+            <div class="emailSection">
+              <span class="is-default">From:</span> 
+              <strong class="fromName">Brad Smith</strong>
+            </div>
+            <div class="emailSection">
+              <span class="is-default">To:</span> 
+              <strong class="clientName">You</strong> <i>kenny.krosky@gmail.com</i>
+            </div>
+            <div class="emailSection">
+              <span class="is-default">Subject:</span> 
+              Hey Man, just got back in town. Check out these awesome pictures from my trip!
+            </div>
+          </div>
+        </div>
+    
+    
+        <div class="the-email">
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum.</p>
+          
+        </div>
+    
+        <div class="the-reply">
+          <div class="is-section hasImgReply">
+            <img class="replyImg" src="assets/images/userimg.jpg" alt="">
+          </div>
+          <div class="is-section hasSettingsReply">
+            <div class="emailSection">
+              Replaying as: <i>kenny.krosky@gmail.com</i>
+            </div>
+            <div class="emailSection">Forward: 
+              <span class="addForward">Add Email Address</span>
+            </div>
+          </div>
+        </div>
+        <div class="isReplyParent">
+          <div class="replyBox">
+            <textarea name="" id=""></textarea>
+            <input type="submit" value="Reply">
+            <div class="replyActions">
+              <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg></li>
+              </ul>
+            </div>
+          </div> 
+        </div>
+      </div>
     </section></section>
 
 

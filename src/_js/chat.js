@@ -31,8 +31,8 @@ export default function() {
 
     }
 
-    function addComment() {
-      console.log('working comment')
+    function addComment(e) {
+      e.preventDefault();
       let grabText = textArea.val()
       count = count + 1;
 

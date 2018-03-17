@@ -1,6 +1,6 @@
 .emails {
   min-width: 600px;
-
+  padding-bottom: 4em;
   &--inner {
     padding: 0em 1.5em;
   }
@@ -208,3 +208,75 @@
     border: none;
   }
 }
+
+.check {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+#checker {
+  position: absolute;
+  left: -150%;
+
+  &:checked ~ {
+    .checkLabel .checkMark  {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+.checkLabel {
+  border: 2px solid $lightGrey;
+  position: relative;
+  top: 2px;
+  left: 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+
+  .checkMark {
+    width: 15px;
+    position: absolute;
+    top: 54%; left: 50%;
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0;
+    transition: all 300ms ease;
+  }
+}
+
+#checkerInbox {
+  position: absolute;
+  left: -150%;
+
+  &:checked ~ {
+    .checkLabelInbox .checkMarkInbox  {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+.checkLabelInbox {
+  border: 2px solid $lightGrey;
+  position: relative;
+  top: 2px;
+  left: 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+
+  .checkMarkInbox {
+    width: 15px;
+    position: absolute;
+    top: 54%; left: 50%;
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0;
+    transition: all 300ms ease;
+  }
+}
+
