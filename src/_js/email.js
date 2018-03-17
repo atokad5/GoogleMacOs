@@ -32,7 +32,6 @@ export default function() {
     }
 
     function updateCounter() {
-      console.log('suh')
       unReadCount = unReadCount - 1;
       inBoxCount.html(unReadCount)
       if(unReadCount <= 0) {

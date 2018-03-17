@@ -3,21 +3,21 @@
     "name": "Ramey Krosky",
     "email": "ramey.krosky@gmail.com",
     "image": "assets/images/ramey.jpg",
-    "message": "Babe! Please grab some eggs on the way home from Zurb today! Thanks!",
+    "message": ": Babe! Please grab some eggs on the way home from Zurb today! Thanks!",
     "hasNotiication": false
   },
   {
     "name": "Doug Jay",
     "email": "dougiefresh@gmail.com",
     "image": "assets/images/dougjay.jpg",
-    "message": "Kenny, what is the deal with you and coffee? Just relax man! You're gonna miss out on some good sleeping patterns.",
+    "message": ": Kenny, what is the deal with you and coffee? Just relax man! You're gonna miss out on some good sleeping patterns.",
     "hasNotiication": false
   },
   {
     "name": "Brad Smith",
     "email": "mrsmithbrad@gmail.com",
     "image": "assets/images/bradsmith.jpg",
-    "message": "Ayo, How did that Google challenge go with Zurb?",
+    "message": ": Ayo, How did that Google challenge go with Zurb?",
     "hasNotiication": true
   }
 ]

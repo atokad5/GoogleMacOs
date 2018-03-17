@@ -21,8 +21,7 @@ export default function() {
           emailAdd = $t.attr('data-email'),
           userImg = $t.attr('data-image'),
           dataMsg = $t.attr('data-message')
-
-          chatName.text(`${userName}: `)
+          chatName.text(`${userName}`)
           chatEmail.text(emailAdd)
           chatImage.css({
             'background-image':'url('+ userImg +')'
@@ -46,6 +45,7 @@ export default function() {
       chatView.animate({
         scrollTop: $('.fakeMsg').outerHeight() * count
       })
+      textArea.val('');
     }
 
     activeBubble.click(updateChatBoard)
