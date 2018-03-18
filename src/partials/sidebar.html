@@ -19,8 +19,9 @@
       <div class="is-bubble is-hangout-contact" data-name="Create Message" data-email="" data-image="{{image}}" data-message="{{message}}"><svg class="pencil" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 32 40" enable-background="new 0 0 32 32" xml:space="preserve"><path d="M25.517,3.254l-3.385-2.127c-0.854-0.536-1.979-0.278-2.517,0.575l-1.334,2.123l6.474,4.066L26.09,5.77  C26.626,4.915,26.371,3.789,25.517,3.254z M6.763,22.168l6.474,4.064L23.788,9.436L17.31,5.368L6.763,22.168z M5.772,27.334  l-0.143,3.818l3.379-1.787l3.14-1.658l-6.246-3.926L5.772,27.334z"/><text x="0" y="47" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Dmitry Baranovskiy</text><text x="0" y="52" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
         <div class="create-msg">
           <span class="alert-num">
-              <svg class="add-chat" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          </span></div>
+            <svg class="add-chat" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </span>
+        </div>
       </div>
 
       <!-- The Hangout Users -->
@@ -28,7 +29,9 @@
         <div class="is-bubble is-hangout-contact {{#if hasNotiication}}has-notification-alert{{/if}}" data-name="{{name}}" data-email="{{email}}" data-image="{{image}}" data-message="{{message}}">
           <img src="{{image}}" alt="">
           {{#if hasNotiication}}
-          <div class="notify-bubble"><span class="alert-num">1</span></div>
+            <div class="notify-bubble">
+              <span class="alert-num">1</span>
+            </div>
           {{/if}}
         </div>
       {{/each}}
@@ -40,11 +43,10 @@
         <div class="closeCross">
           <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </div>
-        <div class="notify-bubble main-notify"><span class="alert-num">1</span></div>
+        <div class="notify-bubble main-notify">
+          <span class="alert-num">1</span>
+        </div>
       </div>
     </div>
-      
-
-  
   </div>
 </section>
